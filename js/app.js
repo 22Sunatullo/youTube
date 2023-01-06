@@ -1,19 +1,23 @@
-const navMenu = document.querySelector('.c-hamburger');
-const menu = document.querySelector('.menu');
+function toggleSlide(){
+    console.log(1)
+    document.querySelector('.slidebar').classList.toggle('active');
+}
 
-navMenu.addEventListener('click', function(e){
-    
-    e.preventDefault();
-    // this.classList.toggle('is-active');
-    if(this.classList.contains('is-active')){
-        this.classList.remove('is-active');
-        menu.classList.remove('nav-active');
-        document.body.classList.remove('body-active');
-        
-    }else{
-        this.classList.add('is-active');
-        menu.classList.add('nav-active');
-        document.body.classList.add('body-active');
+// modal
 
+const modal = document.querySelector('.myModal');
+const btn = document.querySelector('.btnModal');
+const span = document.querySelector('.close');
+
+btn.addEventListener('click', function(){
+    modal.style.display = 'block';
+})
+span.addEventListener('click', function(){
+    modal.style.display = 'none';
+})
+
+window.addEventListener('click', function(event){
+    if(event.target == modal){
+        modal.style.display = 'none';
     }
 })

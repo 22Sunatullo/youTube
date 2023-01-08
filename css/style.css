@@ -103,6 +103,46 @@ header{
     float: right;
     font-size: 20px;
     font-size: 28px;
-    font-size: bold;
-    
+    font-size: bold;   
+}
+/* sliderMenu */
+.sliderMove{
+    /* position: absolute; */
+    width: 70%;
+    overflow: hidden;
+    height: 20px;
+}
+.sliderMenu {
+   display: flex;
+   position: relative;
+   transition: all ease-in 0.4s;
+   /* width: 1000px; */
+   /* overflow: hidden; */
+   left: 0;
+}
+.sliderMenu a {
+    border-radius: 10px;
+    border: solid 1px #000;
+    margin-left: 5px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: rgb(219, 216, 216);
+    font-size: 16px;
+}
+.sliderMenu a:hover{
+    background: #c7c6c6;
+}
+/* .sliderMenu a:active{
+    background: #000;
+    color: aliceblue;
+   
+} */
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
 }

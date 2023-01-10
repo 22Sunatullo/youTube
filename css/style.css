@@ -146,3 +146,13 @@ header{
     justify-content: space-around;
     padding: 0 15%;
 }
+
+.folowers h1 svg{
+    width: 40px;
+}
+
+.folowers h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

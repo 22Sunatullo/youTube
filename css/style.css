@@ -6,7 +6,11 @@ header{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
-   
+    
+}
+main{
+    padding: 20px 5%;
+    margin-top: 20px;
 }
 .slidebar{
     position: fixed;
@@ -14,9 +18,8 @@ header{
     height: 100%;
     left: -200px;
     transition: all ease-in .6s;
-    background: rgb(0, 0, 0, .1);
+    background: white;
 }
-
  .active{
     left: 0px;
 }
@@ -231,4 +234,19 @@ header{
 .navigation a:hover{
     background: #c7c6c6;
     border-radius: 15px;
+}
+/* videoYoutube */
+.videoCont1{
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+   
+}
+
+.colm1 iframe{
+    width: 150px;
+    height: 100px;
+}
+.titleV-r h4 {
+    width: 10px;
 }

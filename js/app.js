@@ -63,9 +63,3 @@ prew.addEventListener('click', function(){
     sliderMenu.style.left = -offset + '%';
 })
 
-// slidebar menu burger
-const scrollbar = document.querySelector('.scrollbar');
-
-window.addEventListener('scroll', function(e){
-    console.log()
-})
